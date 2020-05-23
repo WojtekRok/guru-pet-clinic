@@ -1,9 +1,10 @@
-package pl.wojtekrok.gurupetclinic;
+package gurupetclinic;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
+import pl.wojtekrok.gurupetclinic.GuruPetClinicApplication;
 
-@SpringBootTest
+@SpringBootTest(classes = GuruPetClinicApplication.class)
 class GuruPetClinicApplicationTests {
 
     @Test

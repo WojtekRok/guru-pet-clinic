@@ -1,5 +1,6 @@
 package pl.wojtekrok.gurupetclinic.services.map;
 
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 import pl.wojtekrok.gurupetclinic.model.PetType;
 import pl.wojtekrok.gurupetclinic.services.PetTypeService;
@@ -7,6 +8,7 @@ import pl.wojtekrok.gurupetclinic.services.PetTypeService;
 import java.util.Set;
 
 @Service
+@Profile({"default", "map"})
 public class PetTypeMapService extends AbstractMapService<PetType, Long> implements PetTypeService {
 
     @Override

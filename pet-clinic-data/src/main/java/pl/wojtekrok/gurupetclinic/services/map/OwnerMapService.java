@@ -8,6 +8,7 @@ import pl.wojtekrok.gurupetclinic.services.OwnerService;
 import pl.wojtekrok.gurupetclinic.services.PetService;
 import pl.wojtekrok.gurupetclinic.services.PetTypeService;
 
+import java.util.List;
 import java.util.Set;
 
 @Service
@@ -77,4 +78,12 @@ public class OwnerMapService extends AbstractMapService<Owner, Long> implements 
                 .findFirst()
                 .orElse(null);
     }
+
+    @Override
+    public List<Owner> findAllByLastNameLike(String lastName) {
+        //todo - impl
+        return null;
+    }
+
+
 }

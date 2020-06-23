@@ -123,6 +123,15 @@ public class DataLoader implements CommandLineRunner {
 
         vetService.save(vet2);
 
+        Vet vet3 = new Vet();
+        vet3.setFirstName("Wojtas");
+        vet3.setLastName("Konkretny");
+        vet3.getSpecialities().add(savedDentistry);
+        vet3.getSpecialities().add(savedSurgery);
+        vet3.getSpecialities().add(savedRadiology);
+
+        vetService.save(vet3);
+
         System.out.println("Loaded Vets...");
     }
 }
